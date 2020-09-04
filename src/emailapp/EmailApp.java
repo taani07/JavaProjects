@@ -8,7 +8,7 @@ public class EmailApp {
     private String password;
     private int PasswordLength =10;
     private String department;
-    private int mailboxCapacity;
+    private int mailboxCapacity=500;
     private String alternateEmailaddress;
     //Constructor to recieve First Name and Last Name
     public EmailApp(String firstName, String lastName)
@@ -58,4 +58,18 @@ public class EmailApp {
 
         return new String(password);
     }
+    public int getMailboxCapacity(int mailboxCapacity)
+    {
+        return  this.mailboxCapacity = mailboxCapacity;
+    }
+    public String getAlternateEmailaddress(String alternateEmailaddress)
+    {
+        return this.alternateEmailaddress = alternateEmailaddress;
+    }
+    public String getPassword(String password)
+    {
+        return this.password = password;
+    }
+
+
 }
